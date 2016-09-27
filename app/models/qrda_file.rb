@@ -1,11 +1,3 @@
-require 'nokogiri'
-require "ext/record"
-require 'cat3_population_validator'
-require 'measure_period_validator'
-require 'ccn_validator'
-require 'program_validator'
-require 'valueset_category_validator'
-
 class QrdaFile
   include Mongoid::Document
   include Mongoid::Timestamps

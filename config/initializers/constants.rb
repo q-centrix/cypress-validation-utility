@@ -1,11 +1,3 @@
-  # Be sure to restart your server when you modify this file.
-require "logger"
-
-require_relative "../../lib/cms_validators"
-require_relative "../../lib/encounter_validator"
-
-ERROR_LOG = Logger.new(::File.new("log/error.log","a+"))
-
 BUNDLES = { '2016' => nil, '2017' => nil }
 # just define which bundles we want for now, in the uploads controller we'll populate these
 # (allows for re-checking without restarting in case the user installs a new one)
