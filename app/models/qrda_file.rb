@@ -21,10 +21,10 @@ class QrdaFile
     @content
   end
 
-  def process
+  def process(bundle: nil)
     @measure_ids = get_measure_ids
 
-    @bundle = BUNDLES[program_year]
+    @bundle = bundle || BUNDLES[program_year]
 
     self.validation_errors = { qrda: [], reporting: [], submission: [], ungrouped: [] }
     validators.each do |v|
